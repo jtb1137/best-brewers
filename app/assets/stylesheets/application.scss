@@ -14,21 +14,21 @@
 
  @import "bootstrap";
 
- /* Homepage styling */
+/* global styling */
 
 html,
 body {
     height: 100%
 }
 
-/* global styling */
-.container {
-    margin: 3em;
-}
-
 .panel {
     padding: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* homepage styling */
+.container-home {
+    padding: 1em;
 }
 
 /* form page styling */
