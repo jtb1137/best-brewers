@@ -13,6 +13,7 @@ class User < ApplicationRecord
 
   has_many :favorite_breweries
   has_many :favorites, through: :favorite_breweries, source: :breweries
+  has_many :reviews
 
   def self.new_with_session(params, session)
     super.tap do |user|

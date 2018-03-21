@@ -10,6 +10,7 @@ class Brewery < ApplicationRecord
     accepts_nested_attributes_for :categories, reject_if: proc { |attribute| attribute['name'] === "" }
     has_many :favorite_breweries
     has_many :favorited_by, through: :favorite_breweries, source: :user
+    has_many :reviews
 
     #geocoded_by :full_address
     #after_validation :geocode

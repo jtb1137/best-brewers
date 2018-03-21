@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get 'search'
     end
     put :favorite, on: :member # adds favorite_restaurant_path
+    resources :reviews
   end
   
   get 'users/:id', to: 'users/profiles#show', as: :profile
