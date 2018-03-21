@@ -24,8 +24,8 @@ class BreweriesController < ApplicationController
     end
 
     def show
-        @favorite = Favoritebrewery.find_by(user: current_user, brewery: @brewery).present?
-        @submitted = User.find(@brewery.submitted_by)
+        @favorite = FavoriteBrewery.find_by(user: current_user, brewery: @brewery).present?
+        #@submitted = User.find(@brewery.submitted_by)
     end
 
     def edit

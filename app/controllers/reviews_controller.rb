@@ -5,13 +5,13 @@ class ReviewsController < ApplicationController
         @review = @brewery.reviews.build(review_params)
         @review.user_id = current_user.id
 
-        if @comment.save
+        if @review.save
             flash[:success] = "Review Submitted"
             redirect_to brewery_path(@brewery)
         else
             flash[:alert] = "Review Failed"
             render root_path
-        else
+        end
     end
 
     def destroy
@@ -31,3 +31,4 @@ class ReviewsController < ApplicationController
         @brewery = Brewery.find(params[:brewery_id])
     end
 end
+
