@@ -1,0 +1,19 @@
+<div class="col-lg-4 mb-4">
+    <div class="card text-center panel">
+        <%= image_tag brewery.image.url(:thumb), class: "card-img-top", alt: "card-img-top" %>
+        <div class="card-header">
+            <%= link_to brewery.name, brewery_path(brewery) %>
+        </div>
+        <div class="card-body">
+            <p class="card-text">This should be a description, I think.</p>
+            <%= link_to "View Brewery", brewery_path(brewery), class: "btn btn-primary" %>
+        </div>
+        <div class="card-footer">
+            <ul class="list-inline">
+                <% brewery.categories.each do |category| %>
+                    <li class="list-inline-item"><%= category.name %></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>

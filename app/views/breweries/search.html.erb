@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="card text-center">
+    <div class="card-body">
+      <h2><%= params[:search] %> - <%= params[:location] %></h2>
+    </div>
+  </div>
+  <div class="row my-3">
+    <% @breweries.each do |brewery| %>
+      <%= render 'restaurant_card', restaurant: restaurant %>
+    <% end %>
+  </div>
+</div>

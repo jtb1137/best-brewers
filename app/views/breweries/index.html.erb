@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="homepage-display panel">    
+        <img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="search-form panel">
+        <div class="form-style">
+          <div class="panel-heading my-1">
+            <h1>Search</h1>
+          </div>
+          <div class="panel-body pl-2">
+            <%= form_with url: search_breweries_path, method: :get, local: true do |f| %>
+              <div class="form-group row">
+                <%= f.label :search, "Name", class: "col-sm-3 col-form-label" %>
+                  <div class="col-sm-8">
+                    <%= f.text_field :search, class: "form-control" %>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <%= f.label :location, class: "col-sm-3 col-form-label" %>
+                  <div class="col-sm-8">
+                    <%= f.text_field :location, class: "form-control" %>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <%= f.label :category, class: "col-sm-3 col-form-label" %>
+                    <div class="col-sm-8 py-2">
+                      <%= f.collection_select :category, Category.all, :id, :name, include_blank: "Not functional", class: "form-control" %>
+                    </div>
+                  </div>
+                  <%= f.submit "Search", name: nil, class: "btn btn-primary mb-2" %>
+                <% end %>
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+      <div class="card text-white bg-secondary my-4 text-center">
+        <div class="card-body">
+          <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+        </div>
+      </div>
+    <div class="row">
+      <% @breweries.each do |brewery| %>
+        <%= render 'brewery_card', brewery: brewery %>
+      <% end %>
+    </div>
+  </div>
+</div>

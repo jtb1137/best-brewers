@@ -1,0 +1,62 @@
+<%= form_for @brewery, html: { multipart: true } do |f| %>
+<%= render 'layouts/error_messages', target: @brewery %>
+    <div class="form-group row">
+        <%= f.label :image, class: "col-sm-2 col-form-label"%>
+        <div class="col-sm-10">
+            <%= f.file_field :image, class: "form-control" %>
+        </div>
+    </div>
+    <div class="form-group row">
+        <%= f.label :name, class: "col-sm-2 col-form-label"%>
+        <div class="col-sm-10">
+            <%= f.text_field :name, class: "form-control" %>
+        </div>
+    </div>
+    <div class="form-group row">
+        <%= f.label :address1, "Address Line 1", class: "col-sm-2 col-form-label" %>
+        <div class="col-sm-10">
+            <%= f.text_field :address1, class: "form-control" %>
+        </div>
+    </div> 
+    <div class="form-group row">
+        <%= f.label :address2, "Address Line 2", class: "col-sm-2 col-form-label" %>
+        <div class="col-sm-10">
+            <%= f.text_field :address2, class: "form-control" %>
+        </div>
+    </div> 
+    <div class="form-group row">
+        <%= f.label :city, class: "col-sm-2 col-form-label" %>
+        <div class="col-sm-10">
+            <%= f.text_field :city, class: "form-control" %>
+        </div>
+    </div> 
+    <div class="form-group row">
+        <%= f.label :state, class: "col-sm-2 col-form-label" %>
+        <div class="col-sm-10">
+            <%= f.text_field :state, class: "form-control" %>
+        </div>
+    </div> 
+    <div class="form-group row">
+        <%= f.label :zipcode, class: "col-sm-2 col-form-label" %>
+        <div class="col-sm-10">
+            <%= f.text_field :zipcode, class: "form-control" %>
+        </div>
+    </div> 
+    <div class="form-group row">
+        <%= f.label :category, class: "col-sm-2 col-form-label" %>  
+        <div class="col-sm-10">
+            <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
+        </div>  
+        <!-- , {selected: @brewery.category_id}, {multipart: true} -->
+    </div>
+    <div class="form-group">
+        <%= f.fields_for :categories, @categories do |category_field| %>
+            <div class="form-group">
+                <%= category_field.label "New Category" %>
+                <%= category_field.text_field :name %>
+            </div>
+        <% end %>
+    </div> 
+    <%= f.submit class: "btn btn-primary"%>
+<% end %>
+
