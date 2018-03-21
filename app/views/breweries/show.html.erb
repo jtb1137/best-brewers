@@ -50,10 +50,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10 offset-md-1">
                 <div class="reviews<%= @brewery.id%>">
                     <% @brewery.reviews.each do |review| %>
-                        <%= review.rating %><%= review.content %>
+                        <%= render 'reviews/review', review: review %>
                     <% end %>
                 </div>
                 <div class="review-form">
@@ -63,3 +63,12 @@
         </div>
     </div>
 </div>
+<script>
+    $('.review-rating').raty({
+    readOnly: true,
+    score: function() {
+        return $(this).attr('data-score');
+    },
+    path: '/assets/'
+    });
+</script>

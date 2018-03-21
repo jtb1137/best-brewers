@@ -1,0 +1,11 @@
+<div class="review-<%= review.id %>">
+    <div class="review-user">
+        <p><%= review.user.username %></p>
+    </div>
+    <div class="review-rating" data-score="<%= review.rating %>">
+        <% review.rating %>
+    </div>
+    <div class="review-content">
+        <p><%= review.content %></p>
+    </div>
+</div>
