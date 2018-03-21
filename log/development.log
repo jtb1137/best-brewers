@@ -7562,3 +7562,1052 @@ Processing by BreweriesController#show as HTML
 Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:20:24 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (1.0ms)
+  Rendered reviews/_form.html.erb (1.3ms)
+  Rendered breweries/show.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1295ms (Views: 1291.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:21:04 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (1.5ms)
+  Rendered reviews/_form.html.erb (2.0ms)
+  Rendered breweries/show.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1465ms (Views: 1459.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:21:32 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (1.2ms)
+  Rendered reviews/_form.html.erb (1.9ms)
+  Rendered breweries/show.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1366ms (Views: 1362.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:22:16 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (1.4ms)
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1410ms (Views: 1406.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:22:29 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (1.0ms)
+  Rendered reviews/_form.html.erb (1.3ms)
+  Rendered breweries/show.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1440ms (Views: 1436.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/breweries/2/reviews" for 127.0.0.1 at 2018-03-21 16:22:39 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zWbeD0GspxMLNeRmbfB7RVMvJTxt9qUkSoGyeuA6Z0qG3hBz+CCFATmTq33fEYnVc9jy/qUY0ulQnRPzbYlApQ==", "review"=>{"rating"=>"5", "content"=>"New review\r\n"}, "commit"=>"Create Review", "brewery_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("user_id", "brewery_id", "rating", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["brewery_id", 2], ["rating", 5], ["content", "New review\r\n"], ["created_at", "2018-03-21 20:22:39.574717"], ["updated_at", "2018-03-21 20:22:39.574717"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/breweries/2
+Completed 302 Found in 18ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/breweries/2" for 127.0.0.1 at 2018-03-21 16:22:39 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 2 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_review.html.erb (0.7ms)
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 16:24:39 -0400
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  Rendered breweries/_brewery_card.html.erb (1.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered breweries/_brewery_card.html.erb (2.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  Rendered breweries/_brewery_card.html.erb (1.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 5]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 6]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 7]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 8]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 9]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 10]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 11]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 12]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 13]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 14]]
+  Rendered breweries/_brewery_card.html.erb (1.1ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 15]]
+  Rendered breweries/_brewery_card.html.erb (2.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 16]]
+  Rendered breweries/_brewery_card.html.erb (1.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 17]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 18]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 19]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 20]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 21]]
+  Rendered breweries/_brewery_card.html.erb (0.7ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 22]]
+  Rendered breweries/_brewery_card.html.erb (0.7ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 23]]
+  Rendered breweries/_brewery_card.html.erb (0.7ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 24]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 25]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 26]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 27]]
+  Rendered breweries/_brewery_card.html.erb (1.1ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 28]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 29]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 30]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 31]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 32]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 33]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 34]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 35]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 36]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 37]]
+  Rendered breweries/_brewery_card.html.erb (1.1ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 38]]
+  Rendered breweries/_brewery_card.html.erb (1.1ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 39]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 40]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 41]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 42]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 43]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 44]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 45]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 46]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 47]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 48]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 49]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 50]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  Rendered breweries/index.html.erb within layouts/application (71.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:33:53 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (1.3ms)
+  Rendered breweries/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:39:19 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (1.0ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.3ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (1.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered breweries/show.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 32.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:43:27 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:44:57 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:46:46 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (1.7ms)
+  Rendered breweries/show.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1455ms (Views: 1452.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/3" for 127.0.0.1 at 2018-03-21 16:47:03 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 3 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered reviews/_form.html.erb (2.4ms)
+  Rendered breweries/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/new" for 127.0.0.1 at 2018-03-21 16:47:07 -0400
+Processing by BreweriesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering breweries/new.html.erb within layouts/application
+  Rendered layouts/_error_messages.html.erb (0.3ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered breweries/_form.html.erb (53.9ms)
+  Rendered breweries/new.html.erb within layouts/application (55.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/breweries" for 127.0.0.1 at 2018-03-21 16:47:51 -0400
+Processing by BreweriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bebwCs1RS+Kuof8fiKoiib4qUBc2/zpbf82CPKrWwB5GEtc4O53kJ10cAU+VSag5wqFdn2k1jlUvWhxJazoRmw==", "brewery"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9970f186a8 @tempfile=#<Tempfile:/tmp/RackMultipart20180321-15052-19dahs7.jpg>, @original_filename="SierpinskisValley-2400px.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"brewery[image]\"; filename=\"SierpinskisValley-2400px.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"Image", "address1"=>"adsfk", "address2"=>"daifha", "city"=>"iDHPF", "state"=>"DASIOFP", "zipcode"=>"ADSOIFHP", "category_ids"=>[""], "categories_attributes"=>{"0"=>{"name"=>""}, "1"=>{"name"=>""}, "2"=>{"name"=>""}}}, "commit"=>"Create Brewery"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[paperclip] Trying to link /tmp/RackMultipart20180321-15052-19dahs7.jpg to /tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg
+[paperclip] Trying to link /tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg to /tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-zp6fym.jpg
+Command :: file -b --mime '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-zp6fym.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]'
+Command :: convert '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]' -auto-orient -resize "900x" -crop "900x400+0+53" +repage -gravity center -extent 900x400 '/tmp/53f946a9ec909d9e93a403de00762ea020180321-15052-1m1vhk6'
+[paperclip] Trying to link /tmp/53f946a9ec909d9e93a403de00762ea020180321-15052-1m1vhk6 to /tmp/f45309137d70dff6314d3084e6b9123520180321-15052-10hfbg2
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]'
+Command :: convert '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg[0]' -auto-orient -resize "x180" -crop "286x180+17+0" +repage -gravity center -extent 286x180 '/tmp/53f946a9ec909d9e93a403de00762ea020180321-15052-kp5qfn'
+[paperclip] Trying to link /tmp/53f946a9ec909d9e93a403de00762ea020180321-15052-kp5qfn to /tmp/a1219c3cda6753f520e4efe83ed7f43d20180321-15052-lyp8ty
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE 1=0[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[paperclip] Trying to link /tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-7x74kg.jpg to /tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-gnjlcn.jpg
+Command :: file -b --mime '/tmp/0b097edebd6d3ce843a82026821c8e1e20180321-15052-gnjlcn.jpg'
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "breweries" ("name", "address1", "address2", "city", "state", "zipcode", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "submitted_by") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Image"], ["address1", "adsfk"], ["address2", "daifha"], ["city", "iDHPF"], ["state", "DASIOFP"], ["zipcode", "ADSOIFHP"], ["created_at", "2018-03-21 20:47:52.118521"], ["updated_at", "2018-03-21 20:47:52.118521"], ["image_file_name", "SierpinskisValley-2400px.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 2070613], ["image_updated_at", "2018-03-21 20:47:51.086308"], ["submitted_by", 1]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/breweries/51
+Completed 302 Found in 1051ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:47:52 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:55:05 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:55:16 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:56:04 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:57:23 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (2.8ms)
+  Rendered breweries/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 54.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:57:35 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:58:00 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:58:36 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:58:49 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:58:58 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:59:28 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 16:59:37 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (3.0ms)
+  Rendered breweries/show.html.erb within layouts/application (13.9ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:00:14 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:00:31 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:00:39 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:00:46 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.8ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.3ms)
+  Rendered breweries/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 35.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:01:04 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:01:12 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.7ms)
+  Rendered breweries/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:01:47 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:03:21 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:03:28 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.7ms)
+  Rendered breweries/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:03:54 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.8ms)
+  Rendered breweries/show.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:05:32 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:05:56 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.5ms)
+  Rendered breweries/show.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:06:39 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.3ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:06:48 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.4ms)
+  Rendered breweries/show.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/breweries/51/edit" for 127.0.0.1 at 2018-03-21 17:06:55 -0400
+Processing by BreweriesController#edit as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  Rendering breweries/edit.html.erb within layouts/application
+  Rendered layouts/_error_messages.html.erb (0.3ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered breweries/_form.html.erb (7.6ms)
+  Rendered breweries/edit.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/breweries/51" for 127.0.0.1 at 2018-03-21 17:07:14 -0400
+Processing by BreweriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3xJGN3uU/IvkBRNURZrWnJXGfW37z14/BQnZCKzddq0+GB/EAWAc8G8af4ozQAbuLHMG/7GA0SI+KJ982OpIkg==", "brewery"=>{"name"=>"Image", "address1"=>"25 Mountain Ave", "address2"=>"", "city"=>"Mendham", "state"=>"NJ", "zipcode"=>"08945", "category_ids"=>[""], "categories_attributes"=>{"0"=>{"name"=>""}, "1"=>{"name"=>""}, "2"=>{"name"=>""}}}, "commit"=>"Update Brewery", "id"=>"51"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE 1=0[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "breweries" SET "address1" = ?, "address2" = ?, "city" = ?, "state" = ?, "zipcode" = ?, "updated_at" = ? WHERE "breweries"."id" = ?[0m  [["address1", "25 Mountain Ave"], ["address2", ""], ["city", "Mendham"], ["state", "NJ"], ["zipcode", "08945"], ["updated_at", "2018-03-21 21:07:14.973790"], ["id", 51]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/breweries/51
+Completed 302 Found in 16ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:07:14 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.6ms)
+  Rendered breweries/show.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 17:07:53 -0400
+Processing by BreweriesController#index as HTML
+  Rendering breweries/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mBrewery Load (0.4ms)[0m  [1m[34mSELECT "breweries".* FROM "breweries"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 1]]
+  Rendered breweries/_brewery_card.html.erb (1.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 2]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 3]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 4]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 5]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 6]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 7]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 8]]
+  Rendered breweries/_brewery_card.html.erb (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 9]]
+  Rendered breweries/_brewery_card.html.erb (1.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 10]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 11]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 12]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 13]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 14]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 15]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 16]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 17]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 18]]
+  Rendered breweries/_brewery_card.html.erb (1.1ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 19]]
+  Rendered breweries/_brewery_card.html.erb (2.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 20]]
+  Rendered breweries/_brewery_card.html.erb (1.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 21]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 22]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 23]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 24]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 25]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 26]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 27]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 28]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 29]]
+  Rendered breweries/_brewery_card.html.erb (1.5ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 30]]
+  Rendered breweries/_brewery_card.html.erb (1.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 31]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 32]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 33]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 34]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 35]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 36]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 37]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 38]]
+  Rendered breweries/_brewery_card.html.erb (0.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 39]]
+  Rendered breweries/_brewery_card.html.erb (7.5ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 40]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 41]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 42]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 43]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 44]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 45]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 46]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 47]]
+  Rendered breweries/_brewery_card.html.erb (0.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 48]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 49]]
+  Rendered breweries/_brewery_card.html.erb (1.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 50]]
+  Rendered breweries/_brewery_card.html.erb (1.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered breweries/_brewery_card.html.erb (1.0ms)
+  Rendered breweries/index.html.erb within layouts/application (88.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 110ms (Views: 105.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:08:09 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.2ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.2ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (3.2ms)
+  Rendered breweries/show.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/breweries/51/edit" for 127.0.0.1 at 2018-03-21 17:08:16 -0400
+Processing by BreweriesController#edit as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  Rendering breweries/edit.html.erb within layouts/application
+  Rendered layouts/_error_messages.html.erb (0.7ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered breweries/_form.html.erb (7.4ms)
+  Rendered breweries/edit.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/breweries/51" for 127.0.0.1 at 2018-03-21 17:08:26 -0400
+Processing by BreweriesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+1M2TDwUf7/EzMtrpA7S4xPUqIe8vBb7mO1VG8ds/k+5xUqSgSxhXQMX/PYSus5NfopMFS9f0bVQvMgGyqNxg==", "brewery"=>{"name"=>"The Best Brewery", "address1"=>"25 Mountain Ave", "address2"=>"", "city"=>"Mendham", "state"=>"NJ", "zipcode"=>"08945", "category_ids"=>[""], "categories_attributes"=>{"0"=>{"name"=>""}, "1"=>{"name"=>""}, "2"=>{"name"=>""}}}, "commit"=>"Update Brewery", "id"=>"51"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE 1=0[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "breweries" SET "name" = ?, "updated_at" = ? WHERE "breweries"."id" = ?[0m  [["name", "The Best Brewery"], ["updated_at", "2018-03-21 21:08:26.164667"], ["id", 51]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/breweries/51
+Completed 302 Found in 17ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/breweries/51" for 127.0.0.1 at 2018-03-21 17:08:26 -0400
+Processing by BreweriesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mBrewery Load (0.1ms)[0m  [1m[34mSELECT  "breweries".* FROM "breweries" WHERE "breweries"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mFavoriteBrewery Load (0.1ms)[0m  [1m[34mSELECT  "favorite_breweries".* FROM "favorite_breweries" WHERE "favorite_breweries"."user_id" = 1 AND "favorite_breweries"."brewery_id" = 51 LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering breweries/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "brewery_categories" ON "categories"."id" = "brewery_categories"."category_id" WHERE "brewery_categories"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "favorite_breweries" ON "users"."id" = "favorite_breweries"."user_id" WHERE "favorite_breweries"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."brewery_id" = ?[0m  [["brewery_id", 51]]
+  Rendered reviews/_form.html.erb (1.3ms)
+  Rendered breweries/show.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.6ms)
+
+

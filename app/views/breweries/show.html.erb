@@ -1,14 +1,32 @@
-<div class="container-fluid">
-    <div class="col-lg-10 offset-lg-1 panel">
-        <div class="card text-center">
-            <%= image_tag @brewery.image.url(:medium), class: "card-img-top image-fluid", alt: "card-img-top" %>
-            <div class="card-header display-4">
-                <%= @brewery.name %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1 panel">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brewery-header">
+                        <h1><%= @brewery.name %></h1>
+                    </div>
+                    <div class="buttons float-right">
+                        <div class="btn-group">
+                            <%= link_to "Back", :back, class: "btn btn-secondary" %>
+                            <%= link_to "Edit", edit_brewery_path(@brewery), class: "btn btn-secondary" %>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body row">
-                <div class="col-sm-6">
+
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <%= image_tag @brewery.image.url(:medium), class: "img-fluid" %>
+                </div>
+            </div>
+
+            <div class="row my-3">
+
+                <div class="col-lg-6 pl-5">
                     <div class="brewery-information">
-                        <h3>brewery Information</h3>
+                        <h3>Address</h3>
                         <p><%= @brewery.address1 %></p>
                         <p><%= @brewery.address2 %></p>
                         <p><%= @brewery.city %>, <%= @brewery.state %> <%= @brewery.zipcode %></p>                
@@ -29,37 +47,35 @@
                             <% end %>
                         <% end %>         
                         <p> Favorites: <%= @brewery.favorited_by.count %></p>
-
                     </div>
                 </div>
-                <div class="col-sm-6">
+
+                <div class="col-lg-6">
                     <div id="map" class="map">
                         <iframe width="400" height="300" frameborder="0" style="border:0" 
                         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA4n5tVlG_g_QI0d1uTloOLU4bFUz8GrOA&q=<%= @brewery.latitude %>,<%= @brewery.longitude %>" 
                         allowfullscreen></iframe>
                     </div>
-                <h3>Google Maps Location</h3>
+                </div>
 
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="reviews">
+                        <% if @brewery.reviews.blank? %>
+                            <p>No reviews yet!</p>
+                        <% else %>
+                            <% @brewery.reviews.each do |review| %>
+                                <%= render 'reviews/review', review: review %>
+                            <% end %>
+                        <% end %>
+                    </div>
+                    <div class="new-review-form">
+                        <%= render 'reviews/form' %>
+                    </div>
                 </div>
             </div>
-            <div class="card-footer">
-                <div class="btn-group">
-                    <%= link_to "Back", breweries_path, class: "btn btn-secondary" %>
-                    <%= link_to "Edit", edit_brewery_path(@brewery), class: "btn btn-secondary" %>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="reviews<%= @brewery.id%>">
-                    <% @brewery.reviews.each do |review| %>
-                        <%= render 'reviews/review', review: review %>
-                    <% end %>
-                </div>
-                <div class="review-form">
-                    <%= render 'reviews/form' %>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
